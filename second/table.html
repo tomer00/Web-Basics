@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- table thead tbody tfoot 
+        tr -> table row   
+        td -> table data 
+        th -> table head -->
+
+    <div>
+      <table border="1">
+        <thead>
+          <th>Student ID</th>
+          <th>Student Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1234</td>
+            <td>Tomer</td>
+            <td>Male</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>1235</td>
+            <td>Malik</td>
+            <td>Female</td>
+            <td rowspan="3">16</td>
+          </tr>
+          <tr>
+            <td>1236</td>
+            <td>Panwar</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>1237</td>
+            <td>Duhan</td>
+            <td>Male</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                    <td>Colimn 3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Row1 Cell1</td>
+                    <td>Row1 Cell2</td>
+                    <td>Row1 Cell3</td>
+                </tr>
+                <tr>
+                    <td>Row2 Cell2</td>
+                    <td>Row2 Cell3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Row3 Cell1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div>
+        <table border="1">
+            <thead>
+                <th>No</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder Microsoft</td>
+                    <td>$1000</td>
+                    <td rowspan="4">Company Founder</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Founder Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Founder Google</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zukerberg</td>
+                    <td>Founder Meta</td>
+                    <td>$1500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="3">Total Expense:</td>
+                <td>$4700</td>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+  </body>
+</html>
