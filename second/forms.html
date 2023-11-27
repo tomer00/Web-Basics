@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 1</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <label for="'user"> Enter Username: </label>
+        <input type="text" id="user" placeholder="Username" />
+        <br />
+        <br />
+        <label for="'pass">Enter Password: </label>
+        <input type="password" id="pass" placeholder="Password" />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <br />
+    <br />
+    <div>
+      <form>
+        <fieldset>
+          <label for="date">Choose Date:</label>
+          <input type="date" id="date" />
+
+          <br />
+          <br />
+
+          <label for="selDish">Choose a dish:</label>
+          <select name="dishes" id="selDish">
+            <option value="maggie">Maggie</option>
+            <option value="pasta">Pasta</option>
+            <option value="soup">Soup</option>
+          </select>
+
+          <br />
+          <br />
+
+          <textarea name="textarea" id="tet1" cols="50" rows="5"></textarea>
+        </fieldset>
+        <br />
+        <fieldset>
+          <label>Gender</label>
+          <br />
+          <label for="r1">Male</label>
+          <input type="radio" name="gender" checked id="r1" />
+          <br />
+          <label for="r2">Female</label>
+          <input type="radio" name="gender" id="r2" />
+          <br />
+          <label for="r3">Other</label>
+          <input type="radio" name="gender" id="r3" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
