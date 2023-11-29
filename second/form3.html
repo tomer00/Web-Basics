@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 3</title>
+  </head>
+  <body>
+    <h2>Job Application</h2>
+
+    <form>
+      <label for="etName">Name:</label>
+      <input type="text" id="etName" />
+      <br /><br />
+      <label for="etEmail">Email:</label>
+      <input type="email" id="etEmail" />
+      <br /><br />
+      <label for="etPh">Phone No:</label>
+      <input type="tel" id="etPh" />
+      <br /><br />
+      <label for="res">Resume:</label>
+      <input type="file" id="res" accept=".pdf" />
+      <br /><br />
+      <label for="etExp">Experience (years):</label>
+      <input type="number" name="counter" id="etExp" min="0" max="50" />
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="chHtml">HTML</label>
+        <input type="checkbox" id="chHtml" />
+        <br />
+        <label for="chccss">CSS</label>
+        <input type="checkbox" id="chccss" />
+        <br />
+        <label for="chJs">JavaScript</label>
+        <input type="checkbox" id="chJs" />
+        <br />
+      </fieldset>
+
+      <br />
+      <label for="etEdu">Highest Education:</label>
+      <select name="occuType" id="etEdu">
+        <option value="hs">High School</option>
+        <option value="ad">Associate's Degree</option>
+        <option value="bd">Bahelor's Degree</option>
+        <option value="md">Master's Degree</option>
+        <option value="phd">PhD</option>
+      </select>
+      <br />
+
+
+      <fieldset>
+        <legend>Availabilty</legend>
+        <label for="rFull">Full-time</label>
+        <input type="radio" name="ava" id="rFull" checked/>
+        <br />
+        <label for="rPart">Part-time</label>
+        <input type="radio" name="ava" id="rPart" />
+        <br />
+      </fieldset>
+
+      <label for="comment">Additional Comments:</label>
+      <br />
+      <textarea name="comm" id="comment" cols="40" rows="6"></textarea>
+      <br />
+      <input type="submit" value="Submit Application" />
+    </form>
+  </body>
+</html>
