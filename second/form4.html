@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 3</title>
+  </head>
+  <body>
+    <h2>Complex Form</h2>
+
+    <form>
+      <fieldset>
+        <legend>Personal Inormation</legend>
+        <label for="etName">Name:</label>
+        <input type="text" id="etName" />
+        <br /><br />
+        <label for="etEmail">Email:</label>
+        <input type="email" id="etEmail" />
+        <br /><br />
+        <label for="etPh">Phone No:</label>
+        <input type="tel" id="etPh" />
+        <br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" />
+        <br /><br />
+        <label for="">Gender:</label><br />
+        <label for="rMale">Male</label>
+        <input type="radio" name="ava" id="rMale" />
+        <label for="rFemale">Female</label>
+        <input type="radio" name="ava" id="rFemale" />
+        <br /><br />
+
+        <label for="etCountry">Country:</label>
+        <select name="country" id="etCountry">
+          <option value="hs">High School</option>
+          <option value="ad">Associate's Degree</option>
+          <option value="bd">Bahelor's Degree</option>
+          <option value="md">Master's Degree</option>
+          <option value="phd">PhD</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <label for="etStreet">Street:</label>
+        <input type="text" id="etStreet" />
+        <br /><br />
+        <label for="etcity">City:</label>
+        <input type="text" id="etcity" />
+        <br /><br />
+        <label for="etState">State:</label>
+        <input type="text" id="etState" />
+        <br /><br />
+        <label for="etZip">Zip Code:</label>
+        <input type="number" id="etZip" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Information</legend>
+        <label for="comment">Comments:</label>
+        <br />
+        <textarea name="comm" id="comment" cols="40" rows="6"></textarea>
+        <br />
+        <label for="chTS">I agree to terms of service:</label>
+        <input type="checkbox" name="ts" id="chTS" />
+      </fieldset><br>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
