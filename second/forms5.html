@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 5</title>
+  </head>
+  <body>
+    <h2>Student Registration Form</h2>
+
+    <form>
+      <fieldset>
+        <legend>Personal Inormation</legend>
+        <label for="etName">First Name:</label>
+        <input type="text" id="etName" />
+        <br /><br />
+        <label for="etLastName">Last Name:</label>
+        <input type="text" id="etLastName" />
+        <br /><br />
+        <label for="etEmail">Email:</label>
+        <input type="email" id="etEmail" />
+        <br /><br />
+        <label for="etPh">Moile No:</label>
+        <input type="tel" id="etPh" />
+        <br /><br />
+        <label for="">Gender:</label><br />
+        <label for="rMale">Male</label>
+        <input type="radio" name="ava" id="rMale" />
+        <label for="rFemale">Female</label>
+        <input type="radio" name="ava" id="rFemale" />
+        <br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" />
+        <br /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <label for="etStreet">Address:</label><br>
+        <textarea id="etStreet" cols="40" rows="6"></textarea>
+        <br /><br />
+        <label for="etcity">City:</label>
+        <input type="text" id="etcity" />
+        <br /><br />
+        <label for="etZip">Pin Code:</label>
+        <input type="number" id="etZip" />
+        <br><br>
+        <label for="etState">State:</label>
+        <input type="text" id="etState" />
+        <br /><br />
+        <label for="etCountry">Country:</label>
+        <input type="text" id="etCountry" />
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" name="ts" id="chDr" />
+        <label for="chDr">Drawing</label>
+        <input type="checkbox" name="ts" id="chSing" />
+        <label for="chSing">Singing</label>
+        <input type="checkbox" name="ts" id="chDan" />
+        <label for="chDan">Dancing</label>
+        <input type="checkbox" name="ts" id="chSk" />
+        <label for="chSk">Sketching</label>
+        <br>
+        <input type="checkbox" name="ts" id="chOth" />
+        <label for="chOth">Others</label>
+        <input type="text" placeholder="Ex-Teaching">
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Qualifications</legend>
+        <input type="checkbox" name="ts" id="ch10" />
+        <label for="ch10">High School(10th)</label><br>
+        <input type="checkbox" name="ts" id="ch12" />
+        <label for="ch12">Higher School(12th)</label><br>
+        <input type="checkbox" name="ts" id="chUG" />
+        <label for="chUG">Graduation(Bachelors)</label><br>
+        <input type="checkbox" name="ts" id="chPG" />
+        <label for="chPG">Post Graduation(Masters)</label><br>
+        <input type="checkbox" name="ts" id="chPhd" />
+        <label for="chPhd">PhD</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Applied For</legend>
+        <input type="radio" name="ava" id="rBCA" />
+        <label for="rBCA">BCA</label><br>
+        <input type="radio" name="ava" id="rBCOM" />
+        <label for="rBCOM">B.Com</label><br>
+        <input type="radio" name="ava" id="rBSC" />
+        <label for="rBSC">B.SC</label><br>
+        <input type="radio" name="ava" id="rBA" />
+        <label for="rBA">BA</label><br>
+        <input type="radio" name="ava" id="rMCA" />
+        <label for="rMCA">MCA</label><br>
+        <input type="radio" name="ava" id="rMCOM" />
+        <label for="rMCOM">M.Com</label><br>
+        <input type="radio" name="ava" id="rMSC" />
+        <label for="rMSC">M.SC</label><br>
+        <input type="radio" name="ava" id="rMA" />
+        <label for="rMA">MA</label>
+      </fieldset><br>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
