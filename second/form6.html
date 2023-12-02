@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 6</title>
+  </head>
+  <body>
+    <div>
+      <form >
+        <div>
+          <h1>Job Application Form</h1>
+        </div>
+        <pinfo">
+          Thank you for your interest in working with us. Please check below for
+          available job opportunities that meet your criteria and send your
+          application by filling out the Job Application Form.
+        </p>
+        <div>
+          <p>Name<span>*</span></p>
+          <divitem">
+            <input type="text" name="name" placeholder="First" required />
+            <input type="text" name="name" placeholder="Last" required />
+          </div>
+        </div>
+        <div">
+          <div>
+            <p>Email<span>*</span></p>
+            <input type="text" name="name" required />
+          </div>
+          <div>
+            <p>Phone<span>*</span></p>
+            <input type="text" name="name" required />
+          </div>
+        </div>
+        <div">
+          <div>
+            <p>
+              What position are you applying for?<span>*</span>
+            </p>
+            <select required>
+              <option value="1">Job 1</option>
+              <option value="2">Job 2</option>
+              <option value="3">Job 3</option>
+              <option value="4">Job 4</option>
+              <option value="5">Job 5</option>
+            </select>
+          </div>
+          <div>
+            <p>Available start date<span>*</span></p>
+            <input type="date" name="bdate" required />
+            fa-calendar-alt"></i>
+          </div>
+        </div>
+        <div>
+          <p>
+            What is your current employment status?
+            >
+          </p>
+          <div">
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_1"
+                name="status"
+                required
+              />
+              <label for="radio_1"><span>Employed</span></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_2"
+                name="status"
+                required
+              />
+              <label for="radio_2"
+                ><span>Self-Employed</span></label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_3"
+                name="status"
+                required
+              />
+              <label for="radio_3"><span>Unemployed</span></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_4"
+                name="status"
+                required
+              />
+              <label for="radio_4"><span>Student</span></label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>Submit your resume by providing your resume URL or attach file:</p>
+          <input type="text" name="providing" />
+          <input type="file" name="file" accept="file/*" />
+        </div>
+        <div>
+          <p>Would you like to list references</p>
+          <divanswer">
+            <div>
+              <input type="radio" value="none" id="radio_5" name="references" />
+              <label for="radio_5"><span>Yes</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_6" name="references" />
+              <label for="radio_6"><span>No</span></label>
+            </div>
+          </div>
+        </div>
+        <div">
+          <button type="submit" href="/">Apply For The Job</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
