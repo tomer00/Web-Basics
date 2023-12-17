@@ -2,6 +2,12 @@ h2{
     text-align: center;
 }
 
+/* universalSel */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* elementSel */
 p{
     color: brown;
@@ -25,6 +31,26 @@ p{
 p,article,h2{
     max-width: 400px;
 }
+
+/* childSel */
+section>h2{
+    color: cadetblue;
+}
+
 p.c1{
     
+}
+
+/* psuedoSel */
+a:visited{
+
+}
+a:active{
+
+}
+
+li:first-child{
+    color: rebeccapurple;
+    background-color: rgb(127, 243, 243);
+    max-width: 200px;
 }
