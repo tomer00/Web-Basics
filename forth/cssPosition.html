@@ -24,8 +24,18 @@
         margin: 4px;
         border: 1px solid black;
         position: relative;
-        top: 10px ;
+        top: 10px;
         left: 20px;
+      }
+      #child2a {
+        box-sizing: border-box;
+        padding: 8px;
+        margin: 4px;
+        border: 1px solid black;
+        position: absolute;
+        top: 10px;
+        background: rgb(253, 83, 83);
+        right: 20px;
       }
       #child3 {
         box-sizing: border-box;
@@ -44,11 +54,35 @@
       <li>Fixed</li>
       <li>Sticky</li>
     </ol>
+
+    <dl>
+      <dt>Static</dt>
+      <dd>- Default</dd>
+      <dd>- No use of left right top bootom properties</dd>
+      <br />
+      <dt>Relative</dt>
+      <dd>- Relative to parent</dd>
+      <dd>- We can use left right top props to add spacing around</dd>
+      <dd>- Other elements are no effefcted</dd>
+      <dd>- Initial space and layout is maintainded</dd>
+      <br />
+      <dt>Absolute</dt>
+      <dd>- Used more in overLay layouts</dd>
+      <dd>- Relative to closest positioned ancestor</dd>
+      <dd>- Space is removed by parent and other elements use the sapce</dd>
+    </dl>
+
     <br /><br /><br />
 
     <div id="parent">
       <div id="child1">this is child one conntent</div>
       <div id="child2">this is child two conntent</div>
+      <div id="child3">this is child three conntent</div>
+    </div>
+    <br>
+    <div id="parent">
+      <div id="child1">this is child one conntent</div>
+      <div id="child2a">this is child two conntent</div>
       <div id="child3">this is child three conntent</div>
     </div>
   </body>
