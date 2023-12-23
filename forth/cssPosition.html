@@ -43,6 +43,13 @@
         margin: 4px;
         border: 1px solid black;
       }
+      #childfixed {
+        box-sizing: border-box;
+        padding: 8px;
+        margin: 4px;
+        position: fixed;
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
@@ -69,7 +76,12 @@
       <dt>Absolute</dt>
       <dd>- Used more in overLay layouts</dd>
       <dd>- Relative to closest positioned ancestor</dd>
-      <dd>- Space is removed by parent and other elements use the sapce</dd>
+      <dd>- Space is removed by parent and other elements use the space</dd>
+      <br>
+      <dt>Fixed</dt>
+      <dd>- Used more in overLay layouts</dd>
+      <dd>- Positoned by parent but remain at its place if parent is scrolled</dd>
+      <dd>- Space is removed by parent and other elements use the space</dd>
     </dl>
 
     <br /><br /><br />
@@ -83,6 +95,11 @@
     <div id="parent">
       <div id="child1">this is child one conntent</div>
       <div id="child2a">this is child two conntent</div>
+      <div id="child3">this is child three conntent</div>
+    </div>
+    <br>
+    <div id="parent">
+      <div id="childfixed">this is child Fixed conntent</div>
       <div id="child3">this is child three conntent</div>
     </div>
   </body>
