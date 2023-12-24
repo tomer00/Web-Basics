@@ -50,6 +50,14 @@
         position: fixed;
         border: 1px solid black;
       }
+      #childsticky {
+        box-sizing: border-box;
+        padding: 8px;
+        margin: 4px;
+        position: sticky;
+        bottom: 10px;
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
@@ -82,6 +90,12 @@
       <dd>- Used more in overLay layouts</dd>
       <dd>- Positoned by parent but remain at its place if parent is scrolled</dd>
       <dd>- Space is removed by parent and other elements use the space</dd>
+      <br>
+      <dt>Sticky</dt>
+      <dd>- Relative to parent</dd>
+      <dd>- We can use left right top props to add spacing around</dd>
+      <dd>- Sticky behavour shown till parent div is visible</dd>
+      <dd>- Initial space and layout is maintainded</dd>
     </dl>
 
     <br /><br /><br />
@@ -100,6 +114,11 @@
     <br>
     <div id="parent">
       <div id="childfixed">this is child Fixed conntent</div>
+      <div id="child3">this is child three conntent</div>
+    </div>
+    <br>
+    <div id="parent">
+      <div id="childsticky">this is child Sticky conntent</div>
       <div id="child3">this is child three conntent</div>
     </div>
   </body>
