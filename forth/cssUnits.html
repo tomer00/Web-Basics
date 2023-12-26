@@ -8,38 +8,69 @@
       div,
       p {
         border: 4px solid red;
-        box-sizing: border-box;
       }
       #child1 {
-        box-sizing: border-box;
         padding: 8px;
         margin: 4px;
         border: 1px solid black;
-        top: 45px;
-        /* no use of top left bottom right props in static */
       }
       #child2 {
-        box-sizing: border-box;
         padding: 8px;
         margin: 4px;
         border: 1px solid black;
-        position: relative;
-        top: 10px;
-        left: 0px;
+        width: 160px;
+      }
+      #child3 {
+        padding: 8px;
+        margin: 4px;
+        border: 1px solid black;
+        width: 40%;
+      }
+      #parent{
+        width: 50%;
       }
     </style>
   </head>
   <body>
     <h2>Css Sizes Units</h2>
-    <ol>
-      <li>Pixel (px)</li>
-      <li>Percent (%)</li>
-      <li>Viewport width (vw)</li>
-      <li>Viewport height (vh)</li>
-      <li>Relative em</li>
-      <li>em</li>
-    </ol>
+    <ul>
+        <h3>Absolute</h3>
+        <ol>
+            <li>Pixel (px)</li>
+            <li>Viewport width (vw)</li>
+            <li>Viewport height (vh)</li>
+            <li>Relative em</li>
+            <li>em</li>
+          </ol>
+        <h3>Relative</h3>
+        <ol>
+            <li>Percent (%)</li>
+            <li>Viewport width (vw)</li>
+            <li>Viewport height (vh)</li>
+            <li>Relative em</li>
+            <li>em</li>
+          </ol>
+    </ul>
 
-    
+    <dl>
+        <dt>Pixel</dt>
+        <dd>- Takes exact pixel size on window</dd>
+        <dd>- Absolute type and not depend on its parent</dd>
+        <br />
+        <dt>Percent</dt>
+        <dd>- Relative to parent</dd>
+        <dd>- Takes length according to imidiate parents property</dd>
+        <br />
+        
+      </dl>
+  
+      <br /><br /><br />
+  
+      <div id="parent">
+        <div id="child1">this is child one conntent</div>
+        <div id="child2">this is child two conntent</div>
+        <div id="child3">this is child three conntent</div>
+      </div>
+      <br>
   </body>
 </html>
