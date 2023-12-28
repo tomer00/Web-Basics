@@ -27,55 +27,76 @@
         width: 40%;
         width: 80vw;
       }
-      #parent{
+      #parent {
         width: 60vw;
+      }
+
+      .wrapper {
+        font-size: 1em;
+      }
+
+      .px {
+        width: 200px;
+      }
+
+      .vw {
+        width: 10vw;
+      }
+
+      .em {
+        width: 10em;
       }
     </style>
   </head>
   <body>
     <h2>Css Sizes Units</h2>
     <ul>
-        <h3>Absolute</h3>
-        <ol>
-            <li>Pixel (px)</li>
-            <li>em</li>
-          </ol>
-        <h3>Relative</h3>
-        <ol>
-            <li>Percent (%)</li>
-            <li>Viewport width (vw)</li>
-            <li>Viewport height (vh)</li>
-            <li>Relative em</li>
-          </ol>
+      <h3>Absolute</h3>
+      <ol>
+        <li>Pixel (px)</li>
+        <li>Viewport width (vw)</li>
+        <li>Viewport height (vh)</li>
+      </ol>
+      <h3>Relative</h3>
+      <ol>
+        <li>Percent (%)</li>
+        <li>EM</li>
+        <li>Relative em</li>
+      </ol>
     </ul>
 
     <dl>
-        <dt>Pixel</dt>
-        <dd>- Takes exact pixel size on window</dd>
-        <dd>- Absolute type and not depend on its parent</dd>
-        <br />
-        <dt>Percent</dt>
-        <dd>- Relative to parent</dd>
-        <dd>- Takes length according to imidiate parents property</dd>
-        <br />
-        <dt>Viewport Width</dt>
-        <dd>- Relative to viewports width</dd>
-        <dd>- Not depending on parent attributes</dd>
-        <br>
-        <dt>Viewport Height</dt>
-        <dd>- Relative to viewports Height</dd>
-        <dd>- Not depending on parent attributes</dd>
-        <br>
-        
-      </dl>
-  
-      <br /><br /><br />
-  
-      <div id="parent">
-        <div id="child1">this is child one conntent</div>
-        <div id="child2">this is child two conntent</div>
-        <div id="child3">this is child three conntent</div>
-      </div>
-      <br>
+      <dt>Pixel</dt>
+      <dd>- Takes exact pixel size on window</dd>
+      <dd>- Absolute type and not depend on its parent</dd>
+      <br />
+      <dt>Percent</dt>
+      <dd>- Relative to parent</dd>
+      <dd>- Takes length according to imidiate parents property</dd>
+      <br />
+      <dt>Viewport Width</dt>
+      <dd>- Relative to viewports width</dd>
+      <dd>- Not depending on parent attributes</dd>
+      <br />
+      <dt>Viewport Height</dt>
+      <dd>- Relative to viewports Height</dd>
+      <dd>- Not depending on parent attributes</dd>
+      <br />
+    </dl>
+
+    <br /><br /><br />
+
+    <div id="parent">
+      <div id="child1">this is child one conntent</div>
+      <div id="child2">this is child two conntent</div>
+      <div id="child3">this is child three conntent</div>
+    </div>
+    <br /><br />
+    <div class="wrapper">
+      <p class="box px">I am 200px wide</p>
+      <p class="box vw">I am 10vw wide</p>
+      <p class="box em">I am 10em wide</p>
+    </div>
+    <br />
   </body>
 </html>
