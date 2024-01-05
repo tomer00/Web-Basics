@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      #cont {
+        border: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+      }
+      #cont2 {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      #cont3 {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+      }
+      .items {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(90, 238, 189);
+        margin: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Justify Content</h1>
+    <img src="justifyContent.png" alt="1" />
+    <br />
+    <h2>flexStart</h2>
+    <div id="cont">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+    </div>
+    <br />
+    <h2>flexEnd</h2>
+    <div id="cont2">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+    </div>
+    <br />
+    <h2>center</h2>
+    <div id="cont3">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+    </div>
+  </body>
+</html>
