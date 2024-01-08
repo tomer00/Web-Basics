@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      #cont {
+        height: 240px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      }
+      #cont2 {
+        height: 240px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+      }
+      #cont3 {
+        height: 240px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+      }
+      #cont4 {
+        height: 240px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+      }
+      #cont5 {
+        height: 240px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+      #cont6 {
+        height: 240px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+      }
+      .items {
+        height: 50px;
+        background-color: rgb(90, 238, 189);
+        margin: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Align content</h1>
+    <img src="alignContent.png" width="260px" alt="1" />
+    <br />
+    <h2>flexStart</h2>
+    <div id="cont">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+    <br />
+    <h2>flexEnd</h2>
+    <div id="cont2">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+    <br />
+    <h2>center</h2>
+    <div id="cont3">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+    <br />
+    <h2>stretch</h2>
+    <div id="cont4">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+    <br />
+    <h2>space-between</h2>
+    <div id="cont5">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+    <br />
+    <h2>space-around</h2>
+    <div id="cont6">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+  </body>
+
+  <script>
+    var itmems = document.getElementsByClassName("items");
+    for (let index = 0; index < itmems.length; index++) {
+      var h = Math.random() * (160 - 40) + 40;
+      itmems[index].style.width = h + "px";
+    }
+  </script>
+</html>
