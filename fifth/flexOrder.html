@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      #cont {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      }
+      #cont1 {
+        order: 1;
+      }
+      #cont2 {
+        order: 1;
+      }
+      #cont3 {
+        order: 10;
+      }
+      #cont4 {
+        order: 1;
+      }
+      #cont5 {
+        order: -1;
+      }
+      .items {
+        height: 50px;
+        background-color: rgb(90, 238, 189);
+        margin: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FlexItmes Order</h1>
+    <div id="cont">
+      <div class="items" id="cont1">1</div>
+      <div class="items" id="cont2">2</div>
+      <div class="items" id="cont3">3</div>
+      <div class="items" id="cont4">4</div>
+      <div class="items" id="cont5">5</div>
+    </div>
+    <br />
+  </body>
+
+  <script>
+    var itmems = document.getElementsByClassName("items");
+    for (let index = 0; index < itmems.length; index++) {
+      var h = Math.random() * (160 - 40) + 40;
+      itmems[index].style.width = h + "px";
+    }
+  </script>
+</html>
