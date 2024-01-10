@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      #cont {
+        border: 1px solid black;
+        display: flex;
+        align-content: flex-start;
+      }
+      #cont1 {
+        flex-shrink: 4;
+      }
+      #cont2 {
+        flex-grow: 2;
+      }
+      #cont3 {
+        flex-shrink: 2;
+      }
+      #cont4 {
+        flex-grow: 4;
+      }
+
+      .items {
+        width: 120px;
+        height: 50px;
+        background-color: rgb(90, 238, 189);
+        margin: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FlexItmes Grow And Shrink</h1>
+    <div id="cont">
+      <div class="items" id="cont1">1</div>
+      <div class="items" id="cont2">2</div>
+      <div class="items" id="cont3">3</div>
+      <div class="items" id="cont4">4</div>
+      <div class="items" id="cont5">5</div>
+    </div>
+    <br />
+  </body>
+</html>
