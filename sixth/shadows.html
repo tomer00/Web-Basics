@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Shadows</title>
+    <style>
+      #cont {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        align-content: flex-start;
+      }
+      #cont1 {
+        box-shadow: 20px 10px 40px blueviolet;
+      }
+      #cont2 {
+      }
+      #cont3 {
+      }
+      #cont5 {
+        text-shadow: 2px 4px 6px rgb(20, 11, 6);
+      }
+
+      .items {
+        width: 120px;
+        height: 120px;
+        background-color: rgb(90, 238, 189);
+        margin: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shadows</h1>
+    <div id="cont">
+      <div class="items" id="cont1">1</div>
+      <div class="items" id="cont2">2</div>
+      <div class="items" id="cont3">3</div>
+      <div class="items" id="cont4">4</div>
+      <div class="items" id="cont5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
