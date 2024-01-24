@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in CSS</title>
+    <style>
+      img {
+        float: right;
+      }
+      #circle {
+        width: 40px;
+        height: 40px;
+        background-color: brown;
+        border-radius: 20px;
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+      }
+
+      @keyframes cirAnim {
+        from {
+          translate: 0px 0px;
+        }
+        to {
+          translate: 200px 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Animation-Direction</h2>
+
+    <p>
+      The <b>animation-direction</b> property specifies whether an animation
+      should be played forwards, backwards or in alternate cycles.
+    </p>
+    <p>The animation-direction property can have the following values:</p>
+    <ul>
+      <li>
+        <b>normal</b> - The animation is played as normal (forwards). This is
+        default
+      </li>
+      <li>
+        <b>reverse</b> - The animation is played in reverse direction
+        (backwards)
+      </li>
+      <li>
+        <b>alternate</b> - The animation is played forwards first, then
+        backwards
+      </li>
+      <li>
+        <b>alternate-reverse</b> - The animation is played backwards first, then
+        forwards
+      </li>
+    </ul>
+    <br />
+
+    <div>
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>
