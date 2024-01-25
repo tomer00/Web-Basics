@@ -5,18 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animation in CSS</title>
     <style>
-      img {
-        float: right;
+      div {
+        box-sizing: border-box;
+        padding: 4px 0px;
       }
-      #circle {
+      #cont {
+        border: 1px solid black;
+        display: flex;
+      }
+      #circle1 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+      #circle2 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+      }
+      #circle3 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      #circle4 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+      }
+      .cir {
         width: 40px;
         height: 40px;
         background-color: brown;
         border-radius: 20px;
-        animation-name: cirAnim;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-delay: 2s;
       }
 
       @keyframes cirAnim {
@@ -24,7 +53,7 @@
           translate: 0px 0px;
         }
         to {
-          translate: 200px 400px;
+          translate: 400px 0px;
         }
       }
     </style>
@@ -57,8 +86,25 @@
     </ul>
     <br />
 
-    <div>
-      <div id="circle"></div>
+    <br />
+    <h2>normal</h2>
+    <div id="cont">
+      <div class="cir" id="circle1"></div>
+    </div>
+    <br />
+    <h2>reverse</h2>
+    <div id="cont">
+      <div class="cir" id="circle2"></div>
+    </div>
+    <br />
+    <h2>alternate</h2>
+    <div id="cont">
+      <div class="cir" id="circle3"></div>
+    </div>
+    <br />
+    <h2>alternate-reverse</h2>
+    <div id="cont">
+      <div class="cir" id="circle4"></div>
     </div>
   </body>
 </html>
