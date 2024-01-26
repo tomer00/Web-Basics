@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in CSS</title>
+    <style>
+      div {
+        box-sizing: border-box;
+        padding: 4px 0px;
+      }
+      .cont {
+        border: 1px solid black;
+        display: flex;
+      }
+      #circle1 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+      #circle2 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+      }
+      #circle3 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      #circle4 {
+        animation-name: cirAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+      }
+      .cir {
+        width: 40px;
+        height: 40px;
+        background-color: brown;
+        border-radius: 20px;
+      }
+
+      @keyframes cirAnim {
+        from {
+          translate: 0px 0px;
+        }
+        to {
+          translate: 400px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Animation Timing Function</h2>
+
+    <p>
+      The <b>animation-timing-function</b> property specifies the speed curve of
+      the animation.
+    </p>
+    <ul>
+      <li>
+        <b>ease</b> - Specifies an animation with a slow start, then fast, then
+        end slowly (this is default)
+      </li>
+      <li>
+        <b>linear</b> - Specifies an animation with the same speed from start to
+        end
+      </li>
+      <li><b>ease-in</b> - Specifies an animation with a slow start</li>
+      <li><b>ease-out</b> - Specifies an animation with a slow end</li>
+      <li>
+        <b>ease-in-out</b> - Specifies an animation with a slow start and end
+      </li>
+      <li>
+        <b>cubic-bezier(n,n,n,n)</b> - Lets you define your own values in a
+        cubic-bezier function
+      </li>
+    </ul>
+    <br />
+
+    <br />
+    <h2>ease</h2>
+    <div class="cont">
+      <div class="cir" id="circle1"></div>
+    </div>
+    <br />
+    <h2>linear</h2>
+    <div class="cont">
+      <div class="cir" id="circle2"></div>
+    </div>
+    <br />
+    <h2>ease-in</h2>
+    <div class="cont">
+      <div class="cir" id="circle3"></div>
+    </div>
+    <br />
+    <h2>ease-out</h2>
+    <div class="cont">
+      <div class="cir" id="circle4"></div>
+    </div>
+    <h2>ease-in-out</h2>
+    <div class="cont">
+      <div class="cir" id="circle5"></div>
+    </div>
+    <h2>cubic-bezier</h2>
+    <div class="cont">
+      <div class="cir" id="circle6"></div>
+    </div>
+  </body>
+</html>
