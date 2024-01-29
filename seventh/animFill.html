@@ -16,50 +16,30 @@
       #circle1 {
         animation-name: cirAnim;
         animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-direction: normal;
+        animation-fill-mode: none;
         animation-iteration-count: infinite;
-        animation-timing-function: ease;
       }
       #circle2 {
         animation-name: cirAnim;
         animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-direction: normal;
+        animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        animation-timing-function: linear;
+        animation-delay: 5s;
       }
       #circle3 {
         animation-name: cirAnim;
         animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-direction: normal;
+        animation-fill-mode: backwards;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
+        animation-delay: 1s;
       }
       #circle4 {
         animation-name: cirAnim;
         animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-direction: normal;
+        animation-fill-mode: both;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
-      }
-      #circle5 {
-        animation-name: cirAnim;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-      }
-      #circle6 {
-        animation-name: cirAnim;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-        animation-timing-function: cubic-bezier(-1, -1, -1, 2);
+        animation-delay: 4s;
+        animation-direction: alternate;
       }
       .cir {
         width: 40px;
@@ -71,9 +51,11 @@
       @keyframes cirAnim {
         from {
           translate: 0px 0px;
+          background-color: black;
         }
         to {
           translate: 400px 0px;
+          background-color: aqua;
         }
       }
     </style>
@@ -110,6 +92,25 @@
     <br />
 
     <br />
-    
+    <h2>none</h2>
+    <div class="cont">
+      <div class="cir" id="circle1"></div>
+    </div>
+    <br />
+    <h2>forwards</h2>
+    <div class="cont">
+      <div class="cir" id="circle2"></div>
+    </div>
+    <br />
+    <h2>backwards</h2>
+    <div class="cont">
+      <div class="cir" id="circle3"></div>
+    </div>
+    <br />
+    <h2>both
+    </h2>
+    <div class="cont">
+      <div class="cir" id="circle4"></div>
+    </div>
   </body>
 </html>
