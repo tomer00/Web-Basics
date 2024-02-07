@@ -3,8 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animation in CSS</title>
+    <title>Transition in CSS</title>
+    <style>
     
+      #circle {
+        width: 40px;
+        height: 40px;
+        background-color: brown;
+        border-radius: 20px;
+        transition: all;
+        transition-duration: 1.2s;
+        transition-delay: 100ms;
+        transition-timing-function: ease-in-out;
+      }
+      #cont{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #circle:hover{
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        background-color: rgb(60, 207, 23);
+      }
+    </style>
   </head>
   <body>
     <h2>Css Transition</h2>
@@ -30,5 +54,9 @@
       <br />default is 0s;
     </div>
     
+    <div id="cont">
+      <div id="circle"></div>
+    </div>
+
   </body>
 </html>
