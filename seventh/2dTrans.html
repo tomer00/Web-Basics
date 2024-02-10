@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2d Transforms</title>
     <style>
-
+      .parent {
+        border: 2px solid black;
+        height: 80px;
+      }
+      .child {
+        background-color: rgba(0, 255, 255, 0.514);
+        height: 40px;
+        width: 40px;
+        transition: all 200ms ease-out;
+      }
+      #transLate:hover{
+        transform: translate(20px,20px);
+      }
     </style>
-</head>
-<body>
-     <h2>CSS 2D Transforms</h2>
-     <p>CSS transforms allow you to move, rotate, scale, and skew elements.</p><br>
-     <p>CSS transforms allow you to move, rotate, scale, and skew elements.</p>
-     <h2>CSS 2D Transforms Methods</h2>
-     <p>With the CSS <b>transform</b> property you can use the following 2D transformation methods:</p>
-     <ul>
-        <li><b>translate()</b></li>
-        <li><b>rotate()</b></li>
-        <li><b>scaleX()</b></li>
-        <li><b>scaleY()</b></li>
-        <li><b>scale()</b></li>
-        <li><b>skewX()</b></li>
-        <li><b>skewY()</b></li>
-        <li><b>skew()</b></li>
-        <li><b>matrix()</b></li>
-        </ul>
-</body>
+  </head>
+  <body>
+    <h2>CSS 2D Transforms</h2>
+    <p>CSS transforms allow you to move, rotate, scale, and skew elements.</p>
+    <br />
+    <p>CSS transforms allow you to move, rotate, scale, and skew elements.</p>
+    <h2>CSS 2D Transforms Methods</h2>
+    <p>
+      With the CSS <b>transform</b> property you can use the following 2D
+      transformation methods:
+    </p>
+    <ul>
+      <li><b>translate()</b></li>
+      <li><b>rotate()</b></li>
+      <li><b>scaleX()</b></li>
+      <li><b>scaleY()</b></li>
+      <li><b>scale()</b></li>
+      <li><b>skewX()</b></li>
+      <li><b>skewY()</b></li>
+      <li><b>skew()</b></li>
+      <li><b>matrix()</b></li>
+    </ul>
+    <br />
+
+    <h3>The translate() Method</h3>
+    <p>
+      The <b>translate()</b> method moves an element from its current position
+      (according to the parameters given for the X-axis and the Y-axis).
+    </p>
+    <div class="parent">
+      <div id="transLate" class="child"></div>
+    </div>
+  </body>
 </html>
