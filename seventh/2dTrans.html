@@ -24,6 +24,9 @@
       #scale:hover{
         transform: scale(1.6,1.8);
       }
+      #skew:hover{
+        transform: skew(-20deg,10deg);
+      }
     </style>
   </head>
   <body>
@@ -67,11 +70,21 @@
     </div>
     <br>
     <h3>The scale() Method</h3>
+    <h4>We Have separate <b>scaleX()</b> and <b>scaleY()</b> Methods</h4>
     <p>
         The <b>scale()</b> method increases or decreases the size of an element (according to the parameters given for the width and height).
     </p>
     <div class="parent">
       <div id="scale" class="child"></div>
+    </div>
+    <br>
+    <h3>The skew() Method</h3>
+    <h4>We Have separate <b>skewX()</b> and <b>skewY()</b> Methods</h4>
+    <p>
+        The <b>skew()</b> method skews an element along the X and Y-axis by the given angles.
+    </p>
+    <div class="parent">
+      <div id="skew" class="child"></div>
     </div>
   </body>
 </html>
