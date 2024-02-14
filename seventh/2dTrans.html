@@ -15,17 +15,20 @@
         width: 40px;
         transition: all 200ms ease-out;
       }
-      #transLate:hover{
-        transform: translate(20px,20px);
+      #transLate:hover {
+        transform: translate(20px, 20px);
       }
-      #rotate:hover{
+      #rotate:hover {
         transform: rotate(45deg);
       }
-      #scale:hover{
-        transform: scale(1.6,1.8);
+      #scale:hover {
+        transform: scale(1.6, 1.8);
       }
-      #skew:hover{
-        transform: skew(-20deg,10deg);
+      #skew:hover {
+        transform: skew(-20deg, 10deg);
+      }
+      #mat:hover {
+        transform: matrix(2, -0.3, 0,2, 20, 20);
       }
     </style>
   </head>
@@ -60,31 +63,47 @@
     <div class="parent">
       <div id="transLate" class="child"></div>
     </div>
-    <br>
+    <br />
     <h3>The rotate() Method</h3>
     <p>
-        The <b>rotate()</b> method rotates an element clockwise or counter-clockwise according to a given degree.
+      The <b>rotate()</b> method rotates an element clockwise or
+      counter-clockwise according to a given degree.
     </p>
     <div class="parent">
       <div id="rotate" class="child"></div>
     </div>
-    <br>
+    <br />
     <h3>The scale() Method</h3>
     <h4>We Have separate <b>scaleX()</b> and <b>scaleY()</b> Methods</h4>
     <p>
-        The <b>scale()</b> method increases or decreases the size of an element (according to the parameters given for the width and height).
+      The <b>scale()</b> method increases or decreases the size of an element
+      (according to the parameters given for the width and height).
     </p>
     <div class="parent">
       <div id="scale" class="child"></div>
     </div>
-    <br>
+    <br />
     <h3>The skew() Method</h3>
     <h4>We Have separate <b>skewX()</b> and <b>skewY()</b> Methods</h4>
     <p>
-        The <b>skew()</b> method skews an element along the X and Y-axis by the given angles.
+      The <b>skew()</b> method skews an element along the X and Y-axis by the
+      given angles.
     </p>
     <div class="parent">
       <div id="skew" class="child"></div>
+    </div>
+    <br />
+    <h3>The matrix() Method</h3>
+    <h4>We Have separate <b>skewX()</b> and <b>skewY()</b> Methods</h4>
+    <p>
+      The matrix() method combines all the 2D transform methods into one. <br><br> The
+      matrix() method take six parameters, containing mathematic functions,
+      which allows you to rotate, scale, move (translate), and skew elements. <br><br>
+      The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(),
+      translateX(), translateY())
+    </p>
+    <div class="parent">
+      <div id="mat" class="child"></div>
     </div>
   </body>
 </html>
