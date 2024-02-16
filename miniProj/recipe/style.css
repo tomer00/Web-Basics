@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navItems {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
+#navCont {
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(to right, #99f2c8, #41caa6);
+    padding: 12px;
+    min-height: 60px;
+}
+
+#navLogo {
+    font-size: 2.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#contentBox {
+    width: 70%;
+    border: 1px dashed black;
+
+}
+
+#footCont {
+    box-sizing: border-box;
+    width: 100%;
+    background: #abbaab;
+    background: linear-gradient(to left, #eeeeee, #abbaab);
+    padding: 12px;
+    font-size: 1.2rem;
+    text-align: center;
+    min-height: 40px;
+}
