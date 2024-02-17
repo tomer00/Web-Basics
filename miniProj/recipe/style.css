@@ -10,11 +10,6 @@
     align-items: center;
 }
 
-#container {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: none;
-}
 
 #navCont {
     box-sizing: border-box;
@@ -37,11 +32,76 @@ a {
     margin-right: 20px;
 }
 
+#mainCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
 #contentBox {
     width: 70%;
-    border: 1px dashed black;
-
+    box-shadow: 2px 0px 30px black;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 32px auto;
+    border-radius: 20px;
 }
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marginLeft {
+    margin-left: 20px;
+}
+
+.rightBox {
+    justify-self: end;
+    position: relative;
+    transition: all ease-in 120ms;
+}
+
+.rightBox img {
+    height: 400px;
+    width: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.rightBox:hover {
+    transform: scale(1.1);
+}
+.rightBox>.overLay:hover {
+    opacity: 1;
+}
+
+.overLay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(56, 55, 55, 0.671);
+    border-radius: 20px;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overLay>span {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: white;
+}
+
 
 #footCont {
     box-sizing: border-box;
@@ -52,4 +112,5 @@ a {
     font-size: 1.2rem;
     text-align: center;
     min-height: 40px;
+    margin-top: 60px;
 }
