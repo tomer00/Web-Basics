@@ -10,11 +10,6 @@
     align-items: center;
 }
 
-#container {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: none;
-}
 
 #navCont {
     box-sizing: border-box;
@@ -37,11 +32,47 @@ a {
     margin-right: 20px;
 }
 
+#mainCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
 #contentBox {
     width: 70%;
-    border: 1px dashed black;
-
+    box-shadow: 2px 0px 30px black;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 32px auto;
+    border-radius: 20px;
 }
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marginLeft {
+    margin-left: 20px;
+}
+
+.leftBox {}
+
+.rightBox {
+    justify-self: end;
+}
+
+.rightBox img {
+    height: 400px;
+    width: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
 
 #footCont {
     box-sizing: border-box;
