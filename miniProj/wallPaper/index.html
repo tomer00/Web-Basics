@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coursal</title>
+    <style>
+      body{
+        background-color: rgb(69, 142, 250);
+      }
+      #cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+      }
+      #gal {
+        display: flex;
+        width: 40%;
+        height: 400px;
+        gap: 5px;
+      }
+      #gal > img {
+        width: 32%;
+        height: 400px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        border: 2px solid white;
+        border-radius: 8px;
+        transition: all ease-in 280ms;
+      }
+      #gal > img:hover {
+        width: 82%;
+        border-radius: 12px;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cont">
+      <div id="gal">
+        <img src="../recipe/barfi.jpg" alt="barfi" />
+        <img src="../recipe/dosa.jpg" alt="dosa" />
+        <img src="../recipe/gulabJamun.jpg" alt="gj" />
+      </div>
+    </div>
+  </body>
+</html>
