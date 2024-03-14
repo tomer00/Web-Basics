@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .cont {
+        width: 100vw;
+        height: 100vh;
+        background-color: #8bc6ec;
+        background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 360px;
+        height: 600px;
+        background-color: rgb(253, 253, 208);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+     .card img{
+        border-radius: 20px;
+        margin-top: 20px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="card">
+        <img src="qr-code.png" alt="qr" />
+      </div>
+    </div>
+  </body>
+</html>
