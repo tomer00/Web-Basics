@@ -71,6 +71,22 @@
         font-weight: bold;
         font-size: large;
       }
+
+      #leftBox{
+         display: flex;
+         margin-left: 20px;
+      }
+      #leftBox>img{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+      }
+      #rightBox{
+        margin-right: 20px;
+      }
+      #leftBox>h4{
+        margin-left: 12px;
+      }
     </style>
   </head>
   <body>
@@ -84,6 +100,14 @@
         </p>
 
         <div id="amountBox">
+
+            <div id="leftBox">
+                <img src="qr-code.png" alt="qr" width="20px">
+                <h4>Annual Plan <br> $99.9/year </h4>
+            </div>
+            <div id="rightBox">
+                <a href="">Change</a>
+            </div>
 
         </div>
         <button id="payButton">Proceed to Payment</button>
